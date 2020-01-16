@@ -3,6 +3,8 @@ pipeline {
     stages {
         stage('build') {
             steps {
+		sh 'echo ########################################'
+		sh 'echo $HOME'
                 sh 'gradlew'
             }
         }
